@@ -17,12 +17,52 @@ async function load_model() {
 
 let classesDir = {
     1: {
-        name: 'Kangaroo',
+        name: 'hospital',
         id: 1,
     },
     2: {
-        name: 'Other',
+        name: 'slow',
         id: 2,
+    },
+    3: {
+        name: 'pedestrian_crossing',
+        id: 3,
+    },
+    4: {
+        name: 'right_turn',
+        id: 4,
+    },
+    5: {
+        name: 'speed_limit_80',
+        id: 5,
+    },
+    6: {
+        name: 'stop',
+        id: 6,
+    },   
+    7: {
+        name: 'speed_limit_60',
+        id: 7,
+    },
+    8: {
+        name: 'no_right_turn',
+        id: 8,
+    },    
+    9: {
+        name: 'left_turn',
+        id: 9,
+    },
+    10: {
+        name: 'no_left_turn',
+        id: 10,
+    },    
+    11: {
+        name: 'yield',
+        id: 11,
+    },
+    12: {
+        name: 'bicycle_crossing',
+        id: 12,
     }
 }
 
@@ -152,8 +192,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Real-Time Object Detection: Kangaroo</h1>
+        <h1>Road Sign Detection</h1>
         <h3>MobileNetV2</h3>
+        <h3>Sriharsha Aryasomayajula - harshaarya17@outlook.com</h3>
         <video
           style={{height: '600px', width: "500px"}}
           className="size"
